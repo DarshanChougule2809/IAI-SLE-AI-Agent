@@ -1,200 +1,277 @@
-Absolutely. Here is the **AI Contribution Log** in the same format, but customized for your **Personal Assistant Agent** with greeting, date/time, and motivational quotes.
+# Contribution Log
 
-# AI Contribution Log
+## Project Name
 
-**Course**
-02UAML204 - Introduction to Artificial Intelligence
+**Study Assistant AI Agent**
 
-**Project**
-Personal Assistant AI Agent
+## Project Description
 
-**AI Tool Used**
-GitHub Copilot Chat
+The Study Assistant AI Agent is a Python-based interactive assistant designed to help students with basic academic activities such as calculating percentage, providing study tips, and performing simple calculations.
 
-## Step 1 - Created Greeting Function
+---
 
-**Prompt Given to GitHub Copilot**
+## Step-by-Step Contribution Log
 
-> Create a Python function named `greet_user()` that returns a friendly greeting message for the user of a Personal Assistant Agent.
+### Step 1 – Project Planning
 
-**AI Contribution**
+**Work Done:**
 
-* Generated the `greet_user()` function.
-* Generated the greeting message.
-* Added the return statement.
+* Decided to create a simple AI-agent-style project.
+* Selected the **Study Assistant** as the project topic.
+* Identified the basic functions required.
 
-**My Contribution**
+**Features Planned:**
 
-* Reviewed the generated code.
-* Tested the greeting function.
-* Verified that the greeting message is displayed correctly.
+* Welcome message
+* Percentage calculation
+* Random study tips
+* Simple calculator
+* Exit option
 
-## Step 2 - Created Current Date and Time Function
+---
 
-**Prompt Given to GitHub Copilot**
+### Step 2 – Created the Python File
 
-> Create a Python function named `get_current_datetime()` using the Python datetime module to return the current date and time.
+**Work Done:**
 
-**AI Contribution**
+* Created the main Python source file.
+* Named the file:
 
-* Suggested importing the `datetime` module.
-* Generated the `get_current_datetime()` function.
-* Generated the code to retrieve the current date and time.
+```text
+study_assistant.py
+```
 
-**My Contribution**
+* Prepared the basic program structure.
 
-* Reviewed the generated code.
-* Tested the function.
-* Verified that the correct current date and time are displayed.
+---
 
-## Step 3 - Created Motivational Quote Function
+### Step 3 – Imported Required Module
 
-**Prompt Given to GitHub Copilot**
+**Work Done:**
 
-> Create a Python function named `get_motivation()` that stores several motivational quotes in a list and randomly returns one quote each time the function is called.
+* Imported the `random` module.
+* The module is used to select a random study tip.
 
-**AI Contribution**
+```python
+import random
+```
 
-* Suggested importing the `random` module.
-* Generated the `get_motivation()` function.
-* Created a list of motivational quotes.
-* Used `random.choice()` to select a quote randomly.
+---
 
-**My Contribution**
+### Step 4 – Created Greeting Function
 
-* Reviewed the generated quotes.
-* Tested the function multiple times.
-* Verified that different motivational quotes can be displayed.
+**Work Done:**
 
-## Step 4 - Created Main Program
+* Created the `greet_user()` function.
+* Added a welcome message for the user.
 
-**Prompt Given to GitHub Copilot**
+```python
+def greet_user():
+    return "Hello! I am your Study Assistant. How can I help you?"
+```
 
-> Create a `main()` function for a Personal Assistant Agent that displays a greeting and provides a menu for getting the current date and time, receiving a motivational quote, or exiting the program.
+---
 
-**AI Contribution**
+### Step 5 – Created Percentage Calculation
 
-* Generated the `main()` function.
-* Added the greeting message.
-* Created the menu options.
-* Added the required function calls.
+**Work Done:**
 
-**My Contribution**
+* Created the `calculate_percentage()` function.
+* Added input for five subjects.
+* Stored marks using a list.
+* Calculated total marks.
+* Calculated percentage.
+* Added performance messages.
 
-* Reviewed the generated program.
-* Checked that all functions were connected correctly.
-* Tested each menu option.
+**Performance Levels:**
 
-## Step 5 - Added While Loop and User Input
+```text
+75% and above  → Excellent performance
+60%–74%        → Very good performance
+40%–59%        → Passed
+Below 40%      → Need more practice
+```
 
-**Prompt Given to GitHub Copilot**
+---
 
-> Add a `while True` loop to repeatedly display the menu and ask the user to select an option until the user chooses Exit.
+### Step 6 – Created Study Tip Function
 
-**AI Contribution**
+**Work Done:**
 
-* Generated the `while True` loop.
-* Added the `input()` statement.
-* Added conditions for the different menu choices.
-* Added the exit condition.
+* Created a list containing different study tips.
+* Used `random.choice()` to select one tip.
+* Created the `get_study_tip()` function.
 
-**My Contribution**
+Example tips include:
 
-* Reviewed the loop structure.
-* Tested repeated menu selections.
-* Verified that the program continues running until Exit is selected.
+```text
+Study for 25 minutes and take a 5-minute break.
+Make short notes while studying.
+Practice previous question papers.
+Revise difficult topics regularly.
+Keep your phone away while studying.
+```
 
-## Step 6 - Added Date and Time Option
+---
 
-**Prompt Given to GitHub Copilot**
+### Step 7 – Created Calculator Function
 
-> Add an option to the menu that calls `get_current_datetime()` and displays the current date and time to the user.
+**Work Done:**
 
-**AI Contribution**
+* Created the `simple_calculator()` function.
+* Added two number inputs.
+* Added operator input.
+* Implemented basic arithmetic operations.
 
-* Generated the menu option.
-* Added the function call.
-* Generated the output statement.
+**Supported Operators:**
 
-**My Contribution**
+```text
++  Addition
+-  Subtraction
+*  Multiplication
+/  Division
+```
 
-* Tested the date and time option.
-* Verified that the current date and time are displayed correctly.
+* Added a condition to prevent division by zero.
 
-## Step 7 - Added Motivational Quote Option
+---
 
-**Prompt Given to GitHub Copilot**
+### Step 8 – Created Main Menu
 
-> Add an option to the menu that calls `get_motivation()` and displays a randomly selected motivational quote.
+**Work Done:**
 
-**AI Contribution**
+* Created the `main()` function.
+* Added a continuous `while` loop.
+* Created a menu for selecting different operations.
 
-* Generated the menu option.
-* Added the `get_motivation()` function call.
-* Generated the output statement.
+```text
+1. Calculate Percentage
+2. Get Study Tip
+3. Use Calculator
+4. Exit
+```
 
-**My Contribution**
+---
 
-* Tested the motivational quote option.
-* Ran the program multiple times.
-* Verified that the quote is displayed correctly.
+### Step 9 – Added User Choice Handling
 
-## Step 8 - Added Exit and Invalid Choice Handling
+**Work Done:**
 
-**Prompt Given to GitHub Copilot**
+* Used `if-elif-else` statements to process the user's choice.
+* Connected each menu option to its corresponding function.
+* Added an invalid-choice message.
 
-> Add an Exit option and display an appropriate message when the user exits. Also display an error message when the user enters an invalid menu choice.
+---
 
-**AI Contribution**
+### Step 10 – Added Exit Functionality
 
-* Generated the Exit condition.
-* Added the `"Goodbye!"` message.
-* Generated handling for invalid choices.
-* Added the loop continuation after an invalid choice.
+**Work Done:**
 
-**My Contribution**
+* Added option 4 to exit the program.
+* Used the `break` statement to terminate the loop.
+* Added a goodbye message.
 
-* Tested the Exit option.
-* Tested invalid menu inputs.
-* Verified that the program handles invalid choices without crashing.
+```text
+Goodbye! Keep studying!
+```
 
-## Step 9 - Added Program Entry Point
+---
 
-**Prompt Given to GitHub Copilot**
+### Step 11 – Added Main Program Check
 
-> Add the standard Python entry point so that the `main()` function runs when the program is executed directly.
+**Work Done:**
 
-**AI Contribution**
+* Added the standard Python entry-point condition.
 
-* Suggested the `if __name__ == "__main__":` statement.
-* Added the `main()` function call.
+```python
+if __name__ == "__main__":
+    main()
+```
 
-**My Contribution**
+* This ensures that the `main()` function runs when the file is executed directly.
 
-* Reviewed the generated code.
-* Corrected formatting and indentation issues.
-* Tested the program by running it directly.
+---
 
-## Step 10 - Testing and Debugging
+### Step 12 – Tested Percentage Feature
 
-**Prompt Given to GitHub Copilot**
+**Testing Done:**
 
-> Review the complete Personal Assistant Agent program for syntax, indentation, and logical errors and suggest corrections.
+* Entered different marks for five subjects.
+* Checked the total marks.
+* Checked the percentage calculation.
+* Tested different performance categories.
 
-**AI Contribution**
+**Result:**
 
-* Identified possible indentation and syntax issues.
-* Suggested corrections to the program structure.
-* Helped verify the menu conditions.
-* Suggested improvements for handling invalid input.
+* Percentage was calculated correctly.
+* Performance message was displayed correctly.
 
-**My Contribution**
+---
 
-* Reviewed the suggested corrections.
-* Applied the required changes.
-* Tested the greeting feature.
-* Tested the date and time feature.
-* Tested the motivational quote feature.
-* Tested invalid inputs.
-* Tested the Exit option.
-* Confirmed that all features work as expected.
+### Step 13 – Tested Study Tip Feature
+
+**Testing Done:**
+
+* Selected the Study Tip option multiple times.
+* Verified that tips were selected randomly.
+
+**Result:**
+
+* Different study tips were displayed successfully.
+
+---
+
+### Step 14 – Tested Calculator
+
+**Testing Done:**
+
+* Tested addition.
+* Tested subtraction.
+* Tested multiplication.
+* Tested division.
+* Tested division by zero.
+
+**Result:**
+
+* Arithmetic operations worked correctly.
+* Division by zero was handled safely.
+
+---
+
+### Step 15 – Tested Invalid Input Choice
+
+**Testing Done:**
+
+* Entered an invalid menu option.
+
+Example:
+
+```text
+Enter your choice: 8
+```
+
+**Result:**
+
+```text
+Invalid choice. Please try again.
+```
+
+---
+
+### Step 16 – Final Testing
+
+**Work Done:**
+
+* Tested all menu options together.
+* Checked that the program returns to the main menu after completing an operation.
+* Verified that the Exit option terminates the program.
+
+**Result:**
+
+* All implemented features worked successfully.
+
+---
+
+## Conclusion
+
+The Study Assistant AI Agent was developed step by step by first planning the required features, creating individual functions, integrating them through a menu-driven system, and finally testing each feature. The final program provides a simple and interactive student assistant using Python.
